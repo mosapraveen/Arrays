@@ -1,9 +1,11 @@
+import sys
+
 n=int(input())
 arr = list(map(int,input().split(",")))
 
 
-high = -1
-sec = -1
+high = -sys.maxsize-1
+sec = -sys.maxsize-1
 
 for i in range(len(arr)):
     if arr[i] > high :
